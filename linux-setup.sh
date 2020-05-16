@@ -11,6 +11,11 @@ echo "Installing Vim"
 sudo apt-get install -y vim
 
 
+# Install tmux
+echo "Installing Tmux"
+sudo apt-get install -y tmux
+
+
 # Install git
 echo "Installing Git, please congiure git later..."
 sudo apt-get install -y git
@@ -71,6 +76,10 @@ code --force --install-extension gruntfuggly.todo-tree
 # LAST: Install ZSH, and Oh My Zsh
 echo "Installing ZSH"
 sudo apt-get install -y zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+
+
 sudo usermod -s /usr/bin/zsh $(whoami)
 chsh -s $(which zsh) $(whoami)
 
