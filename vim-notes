@@ -1,0 +1,8 @@
+
+
+Spell Check
+:set spell
+]s, [s, z=, zg, zG
+
+Line and Word Count
+g Ctrl-g
