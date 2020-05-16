@@ -1,0 +1,46 @@
+Vim Plugins
+
+Make Vim with Python option
+make clean
+make distclean
+./configure --disable-pythoninterp --enable-python3interp
+make && sudo make install
+
+Powerline
+pip install powerline-status
+
+Pathogen
+https://github.com/tpope/vim-pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+THE NERDTREE
+https://vimawesome.com/plugin/nerdtree-red
+git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+
+NERDTREE-GIT-PLUGIN
+https://vimawesome.com/plugin/nerdtree-git-plugin
+git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/bundle/nerdtree-git-plugin
+
+
+[vim]
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+if has("gui_running")
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Meslo\ LG\ S\ for\ Powerline
+   endif
+endif
+
+
+
+indentLine
+https://github.com/Yggdroot/indentLine
+git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLint
+vim -u NONE -c "helptags  ~/.vim/pack/vendor/start/indentLint/doc" -c "q"
+
+Indent Guides
+https://vimawesome.com/plugin/indent-guides
+cd ~/.vim/bundle
+git clone git://github.com/nathanaelkane/vim-indent-guides.git

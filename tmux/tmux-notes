@@ -1,0 +1,13 @@
+TMUX
+
+[Plugin Manager]
+Git: https://github.com/tmux-plugins/tpm
+Install: $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+[Config]
+Source: https://github.com/samoshkin/tmux-config
+
+[Plugins]
+Sys Stat: https://github.com/samoshkin/tmux-plugin-sysstat
+
+
