@@ -6,9 +6,16 @@ echo "Updating and Upgrading"
 sudo apt-get update && sudo apt-get upgrade -y
 
 
+# Install vim
+echo "Installing Vim"
+sudo apt-get install -y vim
+
+
 # Install git
 echo "Installing Git, please congiure git later..."
 sudo apt-get install -y git
+sudo git config --global user.name 'RD Harjai'
+sudo git config --global user.email 'rdharjai@gmail.com'
 
 
 # Install curl
